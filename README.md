@@ -8,3 +8,6 @@ Classes to implement Binance ticker stream client based on WebSockets.
 
 ![](https://github.com/miyako/4d-class-websocket-client/assets/1725068/41d30d95-2e06-46f5-9877-8860903be37a)
 
+## Acknowledgements
+
+HTML, CSS, JS from [adrianmanchev/trading-charts](https://github.com/adrianmanchev/trading-charts)
