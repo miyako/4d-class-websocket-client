@@ -1,0 +1,345 @@
+{
+	"_method_": {},
+	"cs.Binance": {
+		"_WSC_Controller": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"_BinanceForm": {
+			"new()": {
+				"Syntax": "**.new**( *channels* : Collection )",
+				"Params": [
+					[
+						"channels",
+						"Collection",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"_Form": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"BinanceUI_WSC_Controller": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"Binance_WSC_Controller": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"_WSC": {
+			"new()": {
+				"Syntax": "**.new**( *url* : Text; *controller* : 4D.Class )",
+				"Params": [
+					[
+						"url",
+						"Text",
+						"->"
+					],
+					[
+						"controller",
+						"4D.Class",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"Binance": {
+			"new()": {
+				"Syntax": "**.new**( *streams* : Collection; *controller* : cs.Binance._WSC_Controller )",
+				"Params": [
+					[
+						"streams",
+						"Collection",
+						"->"
+					],
+					[
+						"controller",
+						"cs.Binance._WSC_Controller",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		}
+	},
+	"_WSC_Controller": {
+		"onOpen()": {
+			"Syntax": "**.onOpen**( *socket* : 4D.WebSocket; *open* : cs.Binance._Open )",
+			"Params": [
+				[
+					"socket",
+					"4D.WebSocket",
+					"->"
+				],
+				[
+					"open",
+					"cs.Binance._Open",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onTerminate()": {
+			"Syntax": "**.onTerminate**( *socket* : 4D.WebSocket; *terminate* : cs.Binance._Terminate )",
+			"Params": [
+				[
+					"socket",
+					"4D.WebSocket",
+					"->"
+				],
+				[
+					"terminate",
+					"cs.Binance._Terminate",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onError()": {
+			"Syntax": "**.onError**( *socket* : 4D.WebSocket; *error* : cs.Binance._Error )",
+			"Params": [
+				[
+					"socket",
+					"4D.WebSocket",
+					"->"
+				],
+				[
+					"error",
+					"cs.Binance._Error",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onMessage()": {
+			"Syntax": "**.onMessage**( *socket* : 4D.WebSocket; *message* : cs.Binance._Message )",
+			"Params": [
+				[
+					"socket",
+					"4D.WebSocket",
+					"->"
+				],
+				[
+					"message",
+					"cs.Binance._Message",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"headers": {
+			"Syntax": "headers : Object"
+		},
+		"dataType": {
+			"Syntax": "dataType : Text"
+		}
+	},
+	"_BinanceForm": {
+		"dailyChange()": {
+			"Syntax": "**.dailyChange**( *p* : Text )->dailyChange : Text",
+			"Params": [
+				[
+					"p",
+					"Text",
+					"->"
+				],
+				[
+					"dailyChange",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"update()": {
+			"Syntax": "**.update**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"terminate()": {
+			"Syntax": "**.terminate**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"price()": {
+			"Syntax": "**.price**( *c* : Text )->USDT : Text",
+			"Params": [
+				[
+					"c",
+					"Text",
+					"->"
+				],
+				[
+					"USDT",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"onUnload()": {
+			"Syntax": "**.onUnload**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"reconnect()": {
+			"Syntax": "**.reconnect**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"onLoad()": {
+			"Syntax": "**.onLoad**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"channels": {
+			"Syntax": "channels : Collection"
+		},
+		"_inheritedFrom_": "_Form"
+	},
+	"_Error": {
+		"errors": {
+			"Syntax": "errors : Collection"
+		},
+		"type": {
+			"Syntax": "type : Text"
+		}
+	},
+	"_Form": {
+		"onUnload()": {
+			"Syntax": "**.onUnload**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"onLoad()": {
+			"Syntax": "**.onLoad**()",
+			"Params": [],
+			"Summary": ""
+		}
+	},
+	"BinanceUI_WSC_Controller": {
+		"onTerminate()": {
+			"Syntax": "**.onTerminate**( *socket* : 4D.WebSocket; *terminate* : cs.Binance._Terminate )",
+			"Params": [
+				[
+					"socket",
+					"4D.WebSocket",
+					"->"
+				],
+				[
+					"terminate",
+					"cs.Binance._Terminate",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onError()": {
+			"Syntax": "**.onError**( *socket* : 4D.WebSocket; *error* : cs.Binance._Error )",
+			"Params": [
+				[
+					"socket",
+					"4D.WebSocket",
+					"->"
+				],
+				[
+					"error",
+					"cs.Binance._Error",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "Binance_WSC_Controller"
+	},
+	"Binance_WSC_Controller": {
+		"onTerminate()": {
+			"Syntax": "**.onTerminate**( *socket* : 4D.WebSocket; *terminate* : cs.Binance._Terminate )",
+			"Params": [
+				[
+					"socket",
+					"4D.WebSocket",
+					"->"
+				],
+				[
+					"terminate",
+					"cs.Binance._Terminate",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"onMessage()": {
+			"Syntax": "**.onMessage**( *socket* : 4D.WebSocket; *message* : cs.Binance._Message )",
+			"Params": [
+				[
+					"socket",
+					"4D.WebSocket",
+					"->"
+				],
+				[
+					"message",
+					"cs.Binance._Message",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "_WSC_Controller"
+	},
+	"_Terminate": {
+		"reason": {
+			"Syntax": "reason : Text"
+		},
+		"code": {
+			"Syntax": "code : Integer"
+		}
+	},
+	"_WSC": {
+		"controller": {
+			"Syntax": "controller : cs.Binance._WSC_Controller"
+		},
+		"socket": {
+			"Syntax": "socket : 4D.WebSocket"
+		}
+	},
+	"Binance": {
+		"stream": {
+			"Syntax": "stream : Object"
+		},
+		"data": {
+			"Syntax": "data : Object"
+		},
+		"_inheritedFrom_": "_WSC"
+	},
+	"_Open": {
+		"type": {
+			"Syntax": "type : Text"
+		}
+	},
+	"_Message": {
+		"data": {
+			"Syntax": "data : Variant"
+		},
+		"type": {
+			"Syntax": "type : Text"
+		}
+	}
+}

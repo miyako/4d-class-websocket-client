@@ -1,0 +1,17 @@
+.name {
+	font-size: 24;
+}
+
+.ticker {
+	font-size: 24;
+	font-weight: bold;
+}
+
+.price {
+	font-size: 24;
+	font-weight: bold;
+}
+
+.movement {
+	font-size: 24;
+}

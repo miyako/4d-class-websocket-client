@@ -1,0 +1,39 @@
+{
+	"Demo": {
+		"methods": [
+			"TEST_Binance",
+			"TEST_Worker"
+		],
+		"forms": [
+			"Binance"
+		]
+	},
+	"Prototypes": {
+		"classes": [
+			"_Error",
+			"_Message",
+			"_Open",
+			"_Terminate"
+		]
+	},
+	"View": {
+		"classes": [
+			"_BinanceForm",
+			"_Form"
+		]
+	},
+	"Web Socket Client": {
+		"classes": [
+			"_WSC",
+			"Binance"
+		]
+	},
+	"Web Socket Client Controller": {
+		"classes": [
+			"_WSC_Controller",
+			"Binance_WSC_Controller",
+			"BinanceUI_WSC_Controller"
+		]
+	},
+	"trash": {}
+}
