@@ -13,10 +13,8 @@ Class constructor($channels : Collection)
 	
 Function onLoad()
 	
-	//MARK:Formのコンテキストでインスタンス化＝Formのコンテキストでコールバック実行）
 	Form:C1466.Binance:=cs:C1710.Binance.new(This:C1470.channels; cs:C1710.BinanceUI_WSC_Controller)
 	
-	//MARK:オブジェクト型タブコントロール
 	Form:C1466.pages:={}
 	Form:C1466.pages.values:=New collection:C1472("ティッカー"; "ストリーム"; "データ"; "デバッグ")
 	Form:C1466.pages.index:=0
