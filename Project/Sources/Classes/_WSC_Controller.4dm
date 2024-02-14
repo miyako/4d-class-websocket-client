@@ -1,10 +1,13 @@
 property dataType : Text
 property headers : Object
 
-Class constructor()
+Class constructor($dataType : Text)
 	
 	This:C1470.headers:={}
-	This:C1470.dataType:="text"
+	
+	$dataType:=["text"; "blob"; "object"].indexOf($dataType)#-1 ? $dataType : "text"
+	
+	This:C1470.dataType:=$dataType
 	
 Function onMessage($socket : 4D:C1709.WebSocket; $message : cs:C1710._Message)
 	
